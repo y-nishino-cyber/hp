@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@600;700&display=swap" rel="stylesheet">
+<title>株式会社ピットステーションSABAE｜鯖江市の車検・点検・修理</title>
+<meta name="description" content="福井県鯖江市鳥羽の自動車整備工場。車検・点検・修理から新車中古車販売、レンタカー、自動車保険まで。中部運輸支局 自動車特定整備認証工場（福第2737号）。ご予約・お見積りはTEL 0778-42-5105へ。">
+<style>
+  html { scroll-behavior: smooth; scroll-padding-top: 96px; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: #ffffff; color: #1b2430; font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; font-feature-settings: "palt" 1; line-break: strict; word-break: normal; overflow-wrap: normal; }
+  a { color: #14294a; text-decoration: none; }
+  a:hover { color: #b8442c; }
+</style>
+</helmet>
+
+<div style="width:100%;">
+
+  <header ref="{{ headerRef }}" style="position:{{ headerPosition }};top:0;z-index:60;background:#ffffff;border-bottom:1px solid #e0e0dc;">
+    <div style="max-width:1180px;margin:0 auto;padding:14px clamp(16px,4vw,32px);display:flex;align-items:center;gap:16px 24px;flex-wrap:wrap;">
+      <a href="#top" style="display:block;flex:1 1 auto;min-width:0;">
+        <div style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(15.5px,4.1vw,21px);color:#14294a;letter-spacing:0.02em;line-height:1.3;white-space:nowrap;">株式会社ピットステーションSABAE</div>
+        <div style="display:{{ logoSubDisplay }};font-size:12px;color:#55606e;margin-top:4px;letter-spacing:0.02em;">中部運輸支局 自動車特定整備認証工場 福第2737号</div>
+      </a>
+      <nav style="margin-left:auto;display:flex;flex-wrap:{{ navWrap }};gap:4px clamp(12px,1.8vw,22px);font-size:clamp(14px,1.5vw,15px);font-weight:500;overflow-x:auto;max-width:100%;">
+        <a href="#shaken" style="color:#1b2430;padding:6px 0;">車検</a>
+        <a href="#tenken" style="color:#1b2430;padding:6px 0;">点検・整備</a>
+        <a href="#shuri" style="color:#1b2430;padding:6px 0;">修理</a>
+        <a href="#other" style="color:#1b2430;padding:6px 0;">その他</a>
+        <a href="#company" style="color:#1b2430;padding:6px 0;">会社案内</a>
+        <a href="#access" style="color:#1b2430;padding:6px 0;">アクセス</a>
+      </nav>
+      <a href="tel:0778425105" style="display:{{ headerTelDisplay }};align-items:baseline;gap:8px;padding:8px 14px;border:1px solid #14294a;border-radius:4px;flex:0 0 auto;white-space:nowrap;">
+        <span style="font-size:12px;color:#55606e;letter-spacing:0.08em;">TEL</span>
+        <span style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:{{ headerTelSize }};color:#14294a;letter-spacing:0.02em;">0778-42-5105</span>
+      </a>
+    </div>
+  </header>
+
+  <section id="top" data-screen-label="ファーストビュー" style="background:#0c1c33;color:#ffffff;">
+    <div style="max-width:1180px;margin:0 auto;padding:clamp(40px,9vw,84px) clamp(20px,5vw,32px) clamp(44px,9vw,84px);display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(28px,5vw,56px);align-items:center;">
+      <div style="container-type:inline-size;">
+        <div style="font-size:14px;letter-spacing:0.18em;color:#9fb4d0;margin-bottom:18px;">福井県鯖江市鳥羽の自動車整備工場</div>
+        <h1 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(26px,8.4cqi,50px);line-height:1.45;letter-spacing:0.01em;margin:0 0 24px;"><span style="display:inline-block;">地域のみなさまのための</span><br><span style="display:inline-block;">車屋さん</span></h1>
+        <p style="font-size:clamp(16px,4.2vw,18px);line-height:2;color:#dbe3ee;margin:0;text-wrap:pretty;">車検・点検・修理を中心に、新車と中古車の販売、レンタカー、自動車保険のご相談まで承っています。車のことで迷ったときに、気軽に寄っていただける工場です。</p>
+      </div>
+      <div style="background:#ffffff;color:#1b2430;border-radius:6px;padding:clamp(22px,5vw,32px);box-shadow:0 18px 40px rgba(0,0,0,0.22);">
+        <div style="font-size:clamp(16px,4.2vw,18px);font-weight:700;color:#14294a;margin-bottom:6px;">お電話でご相談ください</div>
+        <div style="font-size:14px;color:#55606e;line-height:1.8;margin-bottom:16px;">車検のご予約、修理のご相談、お見積りのお問い合わせまで。</div>
+        <a href="tel:0778425105" style="display:block;background:#b8442c;color:#ffffff;text-align:center;border-radius:5px;padding:18px 12px;">
+          <span style="display:block;font-size:13px;letter-spacing:0.12em;opacity:0.9;margin-bottom:4px;">TEL / タップで発信</span>
+          <span style="display:block;font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(30px,8vw,40px);letter-spacing:0.02em;color:#ffffff;">0778-42-5105</span>
+        </a>
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:8px 16px;margin-top:18px;font-size:15px;line-height:1.8;">
+          <div style="color:#55606e;">営業時間</div><div style="font-weight:500;">9:00 - 18:00</div>
+          <div style="color:#55606e;">定休日</div><div style="font-weight:500;">土曜・日曜・祝日（会社カレンダーによる）</div>
+          <div style="color:#55606e;">FAX</div><div style="font-weight:500;">0778-42-5175</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="shaken" data-screen-label="車検" style="background:#ffffff;">
+    <div style="max-width:1080px;margin:0 auto;padding:clamp(52px,10vw,96px) clamp(20px,5vw,32px);">
+      <div style="font-size:13px;letter-spacing:0.2em;color:#b8442c;font-weight:700;margin-bottom:14px;">SHAKEN</div>
+      <h2 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(28px,7vw,44px);line-height:1.5;margin:0 0 24px;color:#14294a;letter-spacing:0.03em;">車検</h2>
+      <p style="font-size:clamp(17px,4.4vw,19px);line-height:2.05;margin:0 0 40px;max-width:44em;text-wrap:pretty;">車検は、検査に合格させるための手続きであると同時に、これから二年間を安心して乗っていただくための点検と整備です。当店は中部運輸支局の自動車特定整備認証工場として、分解をともなう整備まで自社の工場で行っています。</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(16px,3vw,24px);margin-bottom:clamp(40px,7vw,64px);">
+        <div style="background:#f6f5f2;border-top:3px solid #14294a;padding:clamp(22px,4vw,30px);">
+          <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(19px,4.8vw,22px);line-height:1.6;margin:0 0 14px;color:#14294a;">法定費用と整備費用を分けてお見積り</h3>
+          <p style="font-size:16px;line-height:2;margin:0;color:#33404f;text-wrap:pretty;">自賠責保険料・自動車重量税・印紙代といった法定費用と、当店の点検整備費用は、内訳を分けてご提示します。何にいくらかかるのかをご確認いただいたうえで作業に入ります。</p>
+        </div>
+        <div style="background:#f6f5f2;border-top:3px solid #14294a;padding:clamp(22px,4vw,30px);">
+          <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(19px,4.8vw,22px);line-height:1.6;margin:0 0 14px;color:#14294a;">整備記録と保証をお付けします</h3>
+          <p style="font-size:16px;line-height:2;margin:0;color:#33404f;text-wrap:pretty;">点検と整備の内容は記録簿に残してお渡しします。整備した箇所には保証をお付けしますので、車検のあとに気になることがあれば、そのままご相談いただけます。</p>
+        </div>
+        <div style="background:#f6f5f2;border-top:3px solid #14294a;padding:clamp(22px,4vw,30px);">
+          <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(19px,4.8vw,22px);line-height:1.6;margin:0 0 14px;color:#14294a;">交換の要否はご相談のうえで</h3>
+          <p style="font-size:16px;line-height:2;margin:0;color:#33404f;text-wrap:pretty;">すぐに交換が必要な箇所と、次回まで様子を見られる箇所は分けてご説明します。ご予算やお乗りになる期間にあわせて、無理のない範囲をご提案します。</p>
+        </div>
+      </div>
+
+      <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(21px,5.4vw,28px);margin:0 0 24px;color:#14294a;letter-spacing:0.03em;">車検の流れ</h3>
+      <ol style="list-style:none;margin:0 0 clamp(40px,7vw,64px);padding:0;display:grid;gap:2px;background:#e0e0dc;border:1px solid #e0e0dc;">
+        <li style="background:#ffffff;padding:clamp(20px,4vw,26px);display:grid;grid-template-columns:auto 1fr;gap:6px 18px;align-items:baseline;">
+          <div style="font-family:'Shippori Mincho B1',serif;font-size:22px;color:#b8442c;font-weight:700;">1</div>
+          <div>
+            <div style="font-weight:700;font-size:clamp(17px,4.4vw,19px);margin-bottom:8px;color:#14294a;">お電話でご予約</div>
+            <div style="font-size:16px;line-height:2;color:#33404f;">車検証をお手元にご用意のうえ、0778-42-5105 までお電話ください。満了日とご都合のよい日をお伺いします。</div>
+          </div>
+        </li>
+        <li style="background:#ffffff;padding:clamp(20px,4vw,26px);display:grid;grid-template-columns:auto 1fr;gap:6px 18px;align-items:baseline;">
+          <div style="font-family:'Shippori Mincho B1',serif;font-size:22px;color:#b8442c;font-weight:700;">2</div>
+          <div>
+            <div style="font-weight:700;font-size:clamp(17px,4.4vw,19px);margin-bottom:8px;color:#14294a;">お車のお預かりと点検</div>
+            <div style="font-size:16px;line-height:2;color:#33404f;">保安基準にかかわる箇所を中心に、定められた項目に沿って点検します。走行距離やお車の使い方もお伺いします。</div>
+          </div>
+        </li>
+        <li style="background:#ffffff;padding:clamp(20px,4vw,26px);display:grid;grid-template-columns:auto 1fr;gap:6px 18px;align-items:baseline;">
+          <div style="font-family:'Shippori Mincho B1',serif;font-size:22px;color:#b8442c;font-weight:700;">3</div>
+          <div>
+            <div style="font-weight:700;font-size:clamp(17px,4.4vw,19px);margin-bottom:8px;color:#14294a;">お見積りのご説明</div>
+            <div style="font-size:16px;line-height:2;color:#33404f;">点検の結果と費用の内訳をご説明します。ご了承をいただいてから整備に入りますので、途中で費用が変わることはありません。</div>
+          </div>
+        </li>
+        <li style="background:#ffffff;padding:clamp(20px,4vw,26px);display:grid;grid-template-columns:auto 1fr;gap:6px 18px;align-items:baseline;">
+          <div style="font-family:'Shippori Mincho B1',serif;font-size:22px;color:#b8442c;font-weight:700;">4</div>
+          <div>
+            <div style="font-weight:700;font-size:clamp(17px,4.4vw,19px);margin-bottom:8px;color:#14294a;">整備・検査・お引き渡し</div>
+            <div style="font-size:16px;line-height:2;color:#33404f;">整備が終わりましたら検査を受け、記録簿を添えてお返しします。次回に見ておきたい箇所もあわせてお伝えします。</div>
+          </div>
+        </li>
+      </ol>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(20px,4vw,32px);align-items:start;">
+        <div style="border:1px solid #e0e0dc;padding:clamp(22px,4vw,30px);">
+          <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(19px,4.8vw,22px);margin:0 0 16px;color:#14294a;">ご用意いただくもの</h3>
+          <ul style="margin:0 0 14px;padding-left:1.2em;font-size:16px;line-height:2.1;color:#33404f;">
+            <li>車検証</li>
+            <li>自賠責保険証明書</li>
+            <li>自動車税納税証明書</li>
+            <li>認印</li>
+          </ul>
+          <p style="font-size:14px;line-height:1.9;color:#55606e;margin:0;">納税証明書は電子確認により省略できる場合があります。ご不明な点はお電話でお尋ねください。</p>
+        </div>
+        <div style="background:#0c1c33;color:#ffffff;padding:clamp(24px,4.5vw,32px);">
+          <div style="font-size:clamp(17px,4.4vw,19px);font-weight:700;margin-bottom:10px;">車検のご予約・お見積り</div>
+          <p style="font-size:15px;line-height:1.9;color:#dbe3ee;margin:0 0 18px;">満了日が近い方はお早めにご連絡ください。日程のご相談だけでも構いません。</p>
+          <a href="tel:0778425105" style="display:block;background:#b8442c;color:#ffffff;text-align:center;border-radius:5px;padding:16px 12px;">
+            <span style="display:block;font-size:13px;letter-spacing:0.1em;opacity:0.9;margin-bottom:2px;">お電話でご相談ください</span>
+            <span style="display:block;font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(26px,7vw,34px);color:#ffffff;">0778-42-5105</span>
+          </a>
+          <div style="font-size:14px;color:#9fb4d0;margin-top:12px;line-height:1.9;">受付 9:00 - 18:00／土曜・日曜・祝日は定休（会社カレンダーによる）</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tenken" data-screen-label="点検・整備" style="background:#f6f5f2;">
+    <div style="max-width:1080px;margin:0 auto;padding:clamp(52px,10vw,90px) clamp(20px,5vw,32px);">
+      <div style="font-size:13px;letter-spacing:0.2em;color:#b8442c;font-weight:700;margin-bottom:14px;">MAINTENANCE</div>
+      <h2 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(26px,6.4vw,40px);line-height:1.5;margin:0 0 22px;color:#14294a;letter-spacing:0.03em;">点検・整備</h2>
+      <p style="font-size:clamp(17px,4.4vw,19px);line-height:2.05;margin:0 0 36px;max-width:44em;text-wrap:pretty;">車検と車検の間にも、お車の状態は少しずつ変わります。定期的な点検と消耗品の交換が、大きな故障と急な出費を防ぎます。</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:clamp(16px,3vw,24px);">
+        <div style="background:#ffffff;padding:clamp(22px,4vw,28px);">
+          <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:20px;margin:0 0 12px;color:#14294a;">法定12ヵ月点検</h3>
+          <p style="font-size:16px;line-height:2;margin:0;color:#33404f;text-wrap:pretty;">走行に直結する装置を中心に、定められた項目を点検します。結果は記録簿に残しますので、次の車検やお乗り換えのときにも役立ちます。</p>
+        </div>
+        <div style="background:#ffffff;padding:clamp(22px,4vw,28px);">
+          <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:20px;margin:0 0 12px;color:#14294a;">消耗品の交換</h3>
+          <p style="font-size:16px;line-height:2;margin:0;color:#33404f;text-wrap:pretty;">エンジンオイル、オイルエレメント、バッテリー、タイヤ、ワイパー、各種フィルターなど。交換の目安もあわせてお伝えします。</p>
+        </div>
+        <div style="background:#ffffff;padding:clamp(22px,4vw,28px);">
+          <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:20px;margin:0 0 12px;color:#14294a;">季節前の点検</h3>
+          <p style="font-size:16px;line-height:2;margin:0;color:#33404f;text-wrap:pretty;">冬を迎える前のタイヤとバッテリー、夏前のエアコン。遠出のご予定があるときの点検も、お気軽にお申し付けください。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="shuri" data-screen-label="修理" style="background:#ffffff;">
+    <div style="max-width:1080px;margin:0 auto;padding:clamp(52px,10vw,90px) clamp(20px,5vw,32px);">
+      <div style="font-size:13px;letter-spacing:0.2em;color:#b8442c;font-weight:700;margin-bottom:14px;">REPAIR</div>
+      <h2 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(26px,6.4vw,40px);line-height:1.5;margin:0 0 22px;color:#14294a;letter-spacing:0.03em;">修理</h2>
+      <p style="font-size:clamp(17px,4.4vw,19px);line-height:2.05;margin:0 0 36px;max-width:44em;text-wrap:pretty;">「いつもと少し違う」と感じたら、早めにご相談ください。どこが悪いのか分からない段階のお電話で構いません。症状をお伺いして、お預かりが必要かどうかからご案内します。</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(20px,4vw,32px);align-items:start;">
+        <div style="border:1px solid #e0e0dc;padding:clamp(22px,4vw,30px);">
+          <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:20px;margin:0 0 14px;color:#14294a;">よくあるご相談</h3>
+          <ul style="margin:0;padding-left:1.2em;font-size:16px;line-height:2.1;color:#33404f;">
+            <li>警告灯が点いたままになっている</li>
+            <li>エンジンのかかりが悪い</li>
+            <li>走行中の異音や振動が気になる</li>
+            <li>ブレーキの効きや踏み心地が変わった</li>
+            <li>エアコンが冷えない・暖まらない</li>
+            <li>駐車場に水やオイルの跡がある</li>
+          </ul>
+        </div>
+        <div style="display:grid;gap:clamp(16px,3vw,22px);">
+          <div style="background:#f6f5f2;padding:clamp(22px,4vw,28px);">
+            <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:20px;margin:0 0 12px;color:#14294a;">故障診断</h3>
+            <p style="font-size:16px;line-height:2;margin:0;color:#33404f;text-wrap:pretty;">診断機と現車の確認で原因を絞り込みます。修理の範囲と費用をご説明したうえで作業に入ります。</p>
+          </div>
+          <div style="background:#f6f5f2;padding:clamp(22px,4vw,28px);">
+            <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:20px;margin:0 0 12px;color:#14294a;">事故のあとのご相談</h3>
+            <p style="font-size:16px;line-height:2;margin:0;color:#33404f;text-wrap:pretty;">修理の内容はもちろん、保険を使う場合の手続きについてもご相談いただけます。まずはお電話ください。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="other" data-screen-label="その他のサービス" style="background:#0c1c33;color:#ffffff;">
+    <div style="max-width:1080px;margin:0 auto;padding:clamp(48px,9vw,80px) clamp(20px,5vw,32px);">
+      <div style="font-size:13px;letter-spacing:0.2em;color:#9fb4d0;font-weight:700;margin-bottom:14px;">SERVICES</div>
+      <h2 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(26px,6.4vw,40px);line-height:1.5;margin:0 0 30px;letter-spacing:0.03em;">その他のサービス</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:clamp(18px,3vw,28px);">
+        <div style="border-top:2px solid #3d5a86;padding-top:20px;">
+          <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:20px;margin:0 0 12px;">新車・中古車販売</h3>
+          <p style="font-size:16px;line-height:2;margin:0;color:#dbe3ee;text-wrap:pretty;">お車探しから登録・納車まで。今お乗りのお車の状態を見たうえで、乗り換えの時期からご相談ください。</p>
+        </div>
+        <div style="border-top:2px solid #3d5a86;padding-top:20px;">
+          <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:20px;margin:0 0 12px;">レンタカー</h3>
+          <p style="font-size:16px;line-height:2;margin:0;color:#dbe3ee;text-wrap:pretty;">短期のご利用に。車種と空き状況はお電話でご確認ください。</p>
+        </div>
+        <div style="border-top:2px solid #3d5a86;padding-top:20px;">
+          <h3 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:20px;margin:0 0 12px;">自動車保険</h3>
+          <p style="font-size:16px;line-height:2;margin:0;color:#dbe3ee;text-wrap:pretty;">保険代理店として、ご加入や更新のご相談から、万一のときの対応までお手伝いします。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="company" data-screen-label="会社案内" style="background:#ffffff;">
+    <div style="max-width:1080px;margin:0 auto;padding:clamp(52px,10vw,90px) clamp(20px,5vw,32px);">
+      <div style="font-size:13px;letter-spacing:0.2em;color:#b8442c;font-weight:700;margin-bottom:14px;">COMPANY</div>
+      <h2 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(26px,6.4vw,40px);line-height:1.5;margin:0 0 22px;color:#14294a;letter-spacing:0.03em;">会社案内</h2>
+      <p style="font-size:clamp(17px,4.4vw,19px);line-height:2.05;margin:0 0 36px;max-width:44em;text-wrap:pretty;">鯖江市鳥羽で、地域のみなさまのお車をお預かりしています。車検や修理はもちろん、車のことで迷ったときに気軽に寄っていただける場所でありたいと考えています。</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(24px,4vw,40px);align-items:start;">
+        <dl style="margin:0;display:grid;grid-template-columns:auto 1fr;gap:0;border-top:1px solid #e0e0dc;font-size:16px;">
+          <dt style="padding:14px 16px 14px 0;color:#55606e;border-bottom:1px solid #e0e0dc;white-space:nowrap;">社名</dt>
+          <dd style="padding:14px 0;margin:0;border-bottom:1px solid #e0e0dc;line-height:1.8;">株式会社ピットステーションSABAE</dd>
+          <dt style="padding:14px 16px 14px 0;color:#55606e;border-bottom:1px solid #e0e0dc;white-space:nowrap;">所在地</dt>
+          <dd style="padding:14px 0;margin:0;border-bottom:1px solid #e0e0dc;line-height:1.8;">〒916-0013 福井県鯖江市鳥羽1丁目4-3</dd>
+          <dt style="padding:14px 16px 14px 0;color:#55606e;border-bottom:1px solid #e0e0dc;white-space:nowrap;">電話</dt>
+          <dd style="padding:14px 0;margin:0;border-bottom:1px solid #e0e0dc;line-height:1.8;"><a href="tel:0778425105" style="font-weight:700;">0778-42-5105</a></dd>
+          <dt style="padding:14px 16px 14px 0;color:#55606e;border-bottom:1px solid #e0e0dc;white-space:nowrap;">FAX</dt>
+          <dd style="padding:14px 0;margin:0;border-bottom:1px solid #e0e0dc;line-height:1.8;">0778-42-5175</dd>
+          <dt style="padding:14px 16px 14px 0;color:#55606e;border-bottom:1px solid #e0e0dc;white-space:nowrap;">営業時間</dt>
+          <dd style="padding:14px 0;margin:0;border-bottom:1px solid #e0e0dc;line-height:1.8;">9:00 - 18:00</dd>
+          <dt style="padding:14px 16px 14px 0;color:#55606e;border-bottom:1px solid #e0e0dc;white-space:nowrap;">定休日</dt>
+          <dd style="padding:14px 0;margin:0;border-bottom:1px solid #e0e0dc;line-height:1.8;">土曜・日曜・祝日（会社カレンダーによる）</dd>
+          <dt style="padding:14px 16px 14px 0;color:#55606e;border-bottom:1px solid #e0e0dc;white-space:nowrap;">事業内容</dt>
+          <dd style="padding:14px 0;margin:0;border-bottom:1px solid #e0e0dc;line-height:1.8;">自動車整備（車検・点検・修理）／新車・中古車販売／レンタカー／自動車保険代理店</dd>
+          <dt style="padding:14px 16px 14px 0;color:#55606e;border-bottom:1px solid #e0e0dc;white-space:nowrap;">認証</dt>
+          <dd style="padding:14px 0;margin:0;border-bottom:1px solid #e0e0dc;line-height:1.8;">中部運輸支局 自動車特定整備認証工場 福第2737号</dd>
+          <dt style="padding:14px 16px 14px 0;color:#55606e;border-bottom:1px solid #e0e0dc;white-space:nowrap;">古物商許可</dt>
+          <dd style="padding:14px 0;margin:0;border-bottom:1px solid #e0e0dc;line-height:1.8;">福井県公安委員会 第521090010822号</dd>
+        </dl>
+        <div style="aspect-ratio:4/3;background-image:repeating-linear-gradient(135deg,#eceae5 0 10px,#f6f5f2 10px 20px);display:flex;align-items:center;justify-content:center;border:1px solid #e0e0dc;">
+          <div style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:#7a8493;text-align:center;line-height:1.8;padding:16px;">工場外観またはスタッフの写真<br>[ 差し替え用 ]</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="access" data-screen-label="アクセス" style="background:#f6f5f2;">
+    <div style="max-width:1080px;margin:0 auto;padding:clamp(52px,10vw,90px) clamp(20px,5vw,32px);">
+      <div style="font-size:13px;letter-spacing:0.2em;color:#b8442c;font-weight:700;margin-bottom:14px;">ACCESS</div>
+      <h2 style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(26px,6.4vw,40px);line-height:1.5;margin:0 0 30px;color:#14294a;letter-spacing:0.03em;">アクセス</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(22px,4vw,36px);align-items:start;">
+        <div>
+          <div style="font-size:clamp(17px,4.4vw,19px);line-height:1.9;font-weight:700;color:#14294a;margin-bottom:8px;">〒916-0013<br>福井県鯖江市鳥羽1丁目4-3</div>
+          <p style="font-size:16px;line-height:2;color:#33404f;margin:0 0 22px;text-wrap:pretty;">駐車場は工場前にご用意しています。お停めになる場所が分からないときは、お気軽にお声がけください。</p>
+          <dl style="margin:0 0 22px;display:grid;grid-template-columns:auto 1fr;gap:0;border-top:1px solid #dcdad4;font-size:16px;">
+            <dt style="padding:12px 16px 12px 0;color:#55606e;border-bottom:1px solid #dcdad4;white-space:nowrap;">営業時間</dt>
+            <dd style="padding:12px 0;margin:0;border-bottom:1px solid #dcdad4;">9:00 - 18:00</dd>
+            <dt style="padding:12px 16px 12px 0;color:#55606e;border-bottom:1px solid #dcdad4;white-space:nowrap;">定休日</dt>
+            <dd style="padding:12px 0;margin:0;border-bottom:1px solid #dcdad4;line-height:1.8;">土曜・日曜・祝日（会社カレンダーによる）</dd>
+            <dt style="padding:12px 16px 12px 0;color:#55606e;border-bottom:1px solid #dcdad4;white-space:nowrap;">TEL</dt>
+            <dd style="padding:12px 0;margin:0;border-bottom:1px solid #dcdad4;"><a href="tel:0778425105" style="font-weight:700;">0778-42-5105</a></dd>
+            <dt style="padding:12px 16px 12px 0;color:#55606e;border-bottom:1px solid #dcdad4;white-space:nowrap;">FAX</dt>
+            <dd style="padding:12px 0;margin:0;border-bottom:1px solid #dcdad4;">0778-42-5175</dd>
+          </dl>
+          <a href="tel:0778425105" style="display:block;background:#b8442c;color:#ffffff;text-align:center;border-radius:5px;padding:16px 12px;">
+            <span style="display:block;font-size:13px;letter-spacing:0.1em;opacity:0.9;margin-bottom:2px;">お電話でご相談ください</span>
+            <span style="display:block;font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(26px,7vw,32px);color:#ffffff;">0778-42-5105</span>
+          </a>
+        </div>
+        <sc-if value="{{ showMap }}" hint-placeholder-val="{{ true }}">
+          <div style="border:1px solid #dcdad4;background:#ffffff;">
+            <iframe title="株式会社ピットステーションSABAE の地図" src="https://maps.google.com/maps?q=%E7%A6%8F%E4%BA%95%E7%9C%8C%E9%AF%96%E6%B1%9F%E5%B8%82%E9%B3%A5%E7%BE%BD1%E4%B8%81%E7%9B%AE4-3&amp;z=16&amp;output=embed" loading="lazy" style="display:block;width:100%;height:clamp(300px,60vw,460px);border:0;"></iframe>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#0c1c33;color:#ffffff;padding-bottom:{{ footerPad }};">
+    <div style="max-width:1080px;margin:0 auto;padding:clamp(44px,8vw,72px) clamp(20px,5vw,32px) clamp(32px,6vw,48px);">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(28px,5vw,48px);">
+        <div>
+          <div style="font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(19px,5vw,24px);letter-spacing:0.04em;margin-bottom:16px;">株式会社ピットステーションSABAE</div>
+          <div style="font-size:16px;line-height:2.05;color:#dbe3ee;">〒916-0013 福井県鯖江市鳥羽1丁目4-3<br>TEL <a href="tel:0778425105" style="color:#ffffff;font-weight:700;">0778-42-5105</a>／FAX 0778-42-5175<br>営業時間 9:00 - 18:00<br>定休日 土曜・日曜・祝日（会社カレンダーによる）</div>
+          <div style="font-size:14px;line-height:1.9;color:#9fb4d0;margin-top:18px;">中部運輸支局 自動車特定整備認証工場 福第2737号<br>古物商許可：福井県公安委員会 第521090010822号</div>
+        </div>
+        <nav style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px 20px;align-content:start;font-size:16px;">
+          <a href="#shaken" style="color:#dbe3ee;padding:6px 0;">車検</a>
+          <a href="#tenken" style="color:#dbe3ee;padding:6px 0;">点検・整備</a>
+          <a href="#shuri" style="color:#dbe3ee;padding:6px 0;">修理</a>
+          <a href="#other" style="color:#dbe3ee;padding:6px 0;">その他のサービス</a>
+          <a href="#company" style="color:#dbe3ee;padding:6px 0;">会社案内</a>
+          <a href="#access" style="color:#dbe3ee;padding:6px 0;">アクセス</a>
+        </nav>
+      </div>
+      <div style="margin-top:clamp(28px,5vw,44px);padding-top:20px;border-top:1px solid #24395a;font-size:13px;color:#9fb4d0;">&copy; 株式会社ピットステーションSABAE</div>
+    </div>
+  </footer>
+
+  <div style="position:fixed;left:0;right:0;bottom:0;z-index:80;display:{{ barDisplay }};grid-template-columns:{{ barCols }};gap:1px;background:#0c1c33;box-shadow:0 -6px 18px rgba(0,0,0,0.18);">
+    <a href="tel:0778425105" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;background:#b8442c;color:#ffffff;min-height:64px;padding:8px;text-align:center;">
+      <span style="font-size:17px;font-weight:700;color:#ffffff;">電話する</span>
+      <span style="font-size:12px;opacity:0.9;">0778-42-5105</span>
+    </a>
+    <sc-if value="{{ showAccessButton }}" hint-placeholder-val="{{ true }}">
+      <a href="#access" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;background:#14294a;color:#ffffff;min-height:64px;padding:8px;text-align:center;">
+        <span style="font-size:17px;font-weight:700;color:#ffffff;">アクセス</span>
+        <span style="font-size:12px;opacity:0.85;">地図・営業時間</span>
+      </a>
+    </sc-if>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;stickyHeader&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;表示&quot;},&quot;bottomBarAccess&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;表示&quot;},&quot;showMap&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;表示&quot;}}">
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    const w = typeof window !== 'undefined' ? window.innerWidth : 1280;
+    this.state = { isMobile: w <= 860, isCompact: w <= 1180 };
+    this.headerRef = React.createRef();
+  }
+  measure = () => {
+    const w = window.innerWidth;
+    const isMobile = w <= 860, isCompact = w <= 1180;
+    if (isMobile !== this.state.isMobile || isCompact !== this.state.isCompact) {
+      this.setState({ isMobile, isCompact });
+    } else {
+      this.syncAnchorOffset();
+    }
+  };
+  syncAnchorOffset = () => {
+    const el = this.headerRef.current;
+    if (!el || typeof document === 'undefined') return;
+    const sticky = !this.state.isMobile && (this.props.stickyHeader ?? true);
+    const pad = sticky ? Math.round(el.getBoundingClientRect().height) + 12 : 16;
+    document.documentElement.style.scrollPaddingTop = pad + 'px';
+  };
+  componentDidMount() {
+    this.syncAnchorOffset();
+    if (typeof ResizeObserver !== 'undefined' && this.headerRef.current) {
+      this._ro = new ResizeObserver(this.syncAnchorOffset);
+      this._ro.observe(this.headerRef.current);
+    }
+    window.addEventListener('resize', this.measure);
+  }
+  componentDidUpdate() { this.syncAnchorOffset(); }
+  componentWillUnmount() {
+    if (this._ro) this._ro.disconnect();
+    window.removeEventListener('resize', this.measure);
+  }
+  renderVals() {
+    const mobile = this.state.isMobile;
+    const showAccessButton = this.props.bottomBarAccess ?? true;
+    const stickyDesktop = this.props.stickyHeader ?? true;
+    return {
+      headerPosition: mobile ? 'static' : (stickyDesktop ? 'sticky' : 'static'),
+      barDisplay: mobile ? 'grid' : 'none',
+      barCols: showAccessButton ? '1fr 1fr' : '1fr',
+      footerPad: mobile ? '72px' : '0px',
+      logoSubDisplay: (mobile || this.state.isCompact) ? 'none' : 'block',
+      headerTelSize: this.state.isCompact ? '20px' : 'clamp(20px,2.2vw,26px)',
+      headerTelDisplay: mobile ? 'none' : 'flex',
+      navWrap: mobile ? 'nowrap' : 'wrap',
+      showAccessButton,
+      showMap: this.props.showMap ?? true,
+      headerRef: this.headerRef
+    };
+  }
+}
+</script>
+</body>
+</html>
